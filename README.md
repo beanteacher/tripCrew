@@ -195,15 +195,25 @@ DB 서버의 부하 분산과 데이터 백업을 위해 Replication을 적용�
 </div>
 </details>
 
-</br>
 실 서버에서 운영하다 보니 Replication이 충돌하는 일이 수시로 반복되었습니다.
 
 문제는 해결하였으나 충돌하여 내려간 Slave의 상태를 확인하기 어려워 따로 로그를 수집하였습니다.
-</br>
+<details>
+<summary>/etc/crontab</summary>
+<div markdown="1">
+
+```bash
+...
+* * * * *       root    logtime=`date "+\%Y-\%m-\%d \%H:\%M:\%S"` && logquery=`mariadb -e "SHOW SLAVE STATUS \G" | grep -E "[^_]Master_Log_File|Read_Master_Log_Pos|Running|Last_Error"` && printf "${logtime}\n${logquery}\n\n" >> /var/log/mariadb-replication-slave-status.log
+...
+```
+</div>
+</details>
 
 <details>
 <summary>Slave Logging</summary>
 <div markdown="1">
+tail -f /var/log/mariadb-replication-slave-status.log
 
 ![Slave Logging](assets/images/replication_slave_log.png)
 
@@ -214,6 +224,34 @@ DB 서버의 부하 분산과 데이터 백업을 위해 Replication을 적용�
 ### 10-2 mysqldump
 
 Replication은 실시간 복제를 담당하므로 거기에 더해서 이력을 남기기 위해서 cron으로 mysqldump를 스케줄링하였습니다.
+
+<details>
+<summary>백업 스크립트</summary>
+<div markdown="1">
+trip_crew_backup.sh
+
+```bash
+...
+backupDir="${1}/backup/${2}/"
+dateTime=$(date +%Y%m%d%H%M%S)
+
+mkdir -p ${backupDir}
+
+mysqldump -u${3} -p${4} ${2} > "${backupDir}${2}_${dateTime}.sql"
+
+find ${backupDir} -type f -name "*.sql" -mtime +7 -delete
+...
+```
+
+crontab -e
+```bash
+# 민감한 정보는 중괄호로 처리했습니다.
+...
+0 * * * * {scriptDir}/trip_crew_backup.sh {backupDir} trip_crew {username} {password}
+...
+```
+</div>
+</details>
 
 <details>
 <summary>결과</summary>
