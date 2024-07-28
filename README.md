@@ -133,7 +133,25 @@ Github 마스터가 되기 위한 Crew 모임
 </div>
 </details>
 
-## 7. 논리 ERD, 물리 ERD
+## 7. UML, 플로우차트
+<details>
+<summary>UML</summary>
+<div markdown="1">
+
+![UML](assets/images/UML.png)
+
+</div>
+</details>
+<details>
+<summary>플로우차트</summary>
+<div markdown="1">
+
+![플로우차트](assets/images/플로우차트.png)
+
+</div>
+</details>
+
+## 8. 논리 ERD, 물리 ERD
 <details>
 <summary>논리 ERD</summary>
 <div markdown="1">
@@ -152,7 +170,7 @@ Github 마스터가 되기 위한 Crew 모임
 </div>
 </details>
 
-## 8. 테이블 정의서(DDL 쿼리문 포함)
+## 9. 테이블 정의서(DDL 쿼리문 포함)
 <details>
 <summary>테이블 정의서</summary>
 <div markdown="1">
@@ -162,6 +180,6 @@ Github 마스터가 되기 위한 Crew 모임
 </div>
 </details>
 
-## 9. 백업 계획
+## 10. 백업 계획
 
-## 10. 테스트 결과서(테스트 쿼리문 포함)
+## 11. 테스트 결과서(테스트 쿼리문 포함)
