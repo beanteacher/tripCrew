@@ -183,3 +183,142 @@ Github 마스터가 되기 위한 Crew 모임
 ## 10. 백업 계획
 
 ## 11. 테스트 결과서(테스트 쿼리문 포함)
+<details>
+<summary>취향</summary>
+<div markdown="1">
+
+
+<details>
+<summary>사용자 취향 호출</summary>
+<div markdown="1">
+
+![사용자 취향 호출](assets/images/사용자취향호출.PNG)
+
+</div>
+</details>
+
+
+
+<details>
+<summary>사용자 취향 저장</summary>
+<div markdown="1">
+
+![사용자 취향 저장](assets/images/사용자취향저장.PNG)
+
+</div>
+</details>
+
+
+
+<details>
+<summary>사용자 취향 삭제</summary>
+<div markdown="1">
+
+![사용자 취향 삭제](assets/images/사용자취향삭제.PNG)
+
+</div>
+</details>
+
+
+
+<details>
+<summary>사용자 취향 수정</summary>
+<div markdown="1">
+
+![사용자 취향 수정](assets/images/사용자취향수정.PNG)
+
+</div>
+</details>
+
+
+
+<details>
+<summary>게시글 취향 호출</summary>
+<div markdown="1">
+
+![게시글 취향 호출](assets/images/게시글취향호출.PNG)
+
+</div>
+</details>
+
+
+
+<details>
+<summary>게시글 취향 저장</summary>
+<div markdown="1">
+
+![게시글 취향 저장](assets/images/게시글취향저장.PNG)
+
+</div>
+</details>
+
+
+
+<details>
+<summary>게시글 취향 삭제</summary>
+<div markdown="1">
+
+![게시글 취향 삭제](assets/images/게시글취향삭제.PNG)
+
+</div>
+</details>
+
+
+
+<details>
+<summary>게시글 취향 수정</summary>
+<div markdown="1">
+
+![게시글 취향 수정](assets/images/게시글취향수정.PNG)
+
+</div>
+</details>
+
+
+
+<details>
+<summary>여행 코스 취향 호출</summary>
+<div markdown="1">
+
+![여행 코스 취향 호출](assets/images/여행코스취향호출.PNG)
+
+</div>
+</details>
+
+
+
+<details>
+<summary>여행 코스 취향 저장</summary>
+<div markdown="1">
+
+![여행 코스 취향 저장](assets/images/여행코스취향저장.PNG)
+
+</div>
+</details>
+
+
+
+<details>
+<summary>여행 코스 취향 삭제</summary>
+<div markdown="1">
+
+![여행 코스 취향 삭제](assets/images/여행코스취향삭제.PNG)
+
+</div>
+</details>
+
+
+
+<details>
+<summary>여행 코스 취향 수정</summary>
+<div markdown="1">
+
+![여행 코스 취향 수정](assets/images/여행코스취향수정.PNG)
+
+</div>
+</details>
+
+
+
+</div>
+</details>
