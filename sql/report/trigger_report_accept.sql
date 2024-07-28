@@ -97,7 +97,7 @@ BEGIN
     IF NEW.report_comment_state = 'accept' THEN
         -- 댓글을 정지 상태로 변경
         UPDATE TRIP_REVIEW_COMMENT
-           SET trip_review_comment_state = 'ban'
+           SET trip_review_comment_status = 'ban'
          WHERE trip_review_comment_no = NEW.trip_review_comment_no
          LIMIT 1;
         
@@ -223,7 +223,7 @@ BEGIN
     IF NEW.report_company_state = 'accept' THEN
         -- 동행을 정지 상태로 변경
         UPDATE TRIP_COMPANY
-           SET trip_company_status = 'ban'
+           SET trip_company_state = 'ban'
          WHERE trip_company_no = NEW.trip_company_no
          LIMIT 1;
         
