@@ -1,16 +1,12 @@
 -- 버튼 입력 예시
 
-UPDATE REPORT_COMMENT
-   SET report_comment_state = 'accept'
- WHERE report_comment_no = 7;
+UPDATE REPORT_BOARD
+   SET report_review_status = 'accept'
+ WHERE report_review_no = 5;
 
 UPDATE REPORT_COMMENT
    SET report_comment_state = 'accept'
  WHERE report_comment_no = 8;
-
-UPDATE REPORT_BOARD
-   SET report_review_status = 'accept'
- WHERE report_review_no = 5;
 
 UPDATE REPORT_COURSE
    SET report_course_state = 'accept'
@@ -23,9 +19,10 @@ UPDATE REPORT_PARTNER
 
 -- accept 시 로그를 남기는 트리거, 자세한 설명 추가 필요
 
+-- 리뷰게시판
+
 DELIMITER //
 
--- 리뷰게시판
 CREATE TRIGGER after_report_state_update_board
 AFTER UPDATE ON REPORT_BOARD
 FOR EACH ROW
@@ -35,6 +32,21 @@ BEGIN
 
     -- Check if the report_review_status has been updated to 'accept'
     IF NEW.report_review_status = 'accept' THEN
+        -- 게시글을 정지 상태로 변경
+        UPDATE TRIP_REVIEW
+           SET trip_review_status = 'ban'
+         WHERE trip_review_no = NEW.trip_review_no
+         LIMIT 1;
+        
+        -- 게시글 작성자를 정지 상태로 변경
+        UPDATE USER_INFO
+           SET user_account_state = 'ban'
+         WHERE user_no = (SELECT TRIP_REVIEW.trip_review_user_no
+                                     FROM REPORT_BOARD
+                                     JOIN TRIP_REVIEW USING (trip_review_no)
+                                    WHERE TRIP_REVIEW.trip_review_no = NEW.trip_review_no
+                                    LIMIT 1);
+
         -- Get the user_no of the user who will be suspended
         SELECT ui.user_no
         INTO v_user_no
@@ -65,9 +77,15 @@ BEGIN
             NEW.report_reason_code
         );
     END IF;
-END ;
+END //
+
+DELIMITER ;
+
 
 -- 댓글
+
+DELIMITER //
+
 CREATE TRIGGER after_report_state_update_comment
 AFTER UPDATE ON REPORT_COMMENT
 FOR EACH ROW
@@ -77,6 +95,21 @@ BEGIN
 
     -- Check if the report_comment_state has been updated to 'accept'
     IF NEW.report_comment_state = 'accept' THEN
+        -- 댓글을 정지 상태로 변경
+        UPDATE TRIP_REVIEW_COMMENT
+           SET trip_review_comment_state = 'ban'
+         WHERE trip_review_comment_no = NEW.trip_review_comment_no
+         LIMIT 1;
+        
+        -- 댓글 작성자를 정지 상태로 변경
+        UPDATE USER_INFO
+           SET user_account_state = 'ban'
+         WHERE user_no = (SELECT TRIP_REVIEW_COMMENT.trip_review_comment_user_no
+                                     FROM REPORT_COMMENT
+                                     JOIN TRIP_REVIEW_COMMENT USING (trip_review_comment_no)
+                                    WHERE TRIP_REVIEW_COMMENT.trip_review_comment_no = NEW.trip_review_comment_no
+                                    LIMIT 1);
+
         -- Get the user_no of the user who will be suspended
         SELECT ui.user_no
         INTO v_user_no
@@ -107,9 +140,15 @@ BEGIN
             NEW.report_reason_code
         );
     END IF;
-END ;
+END //
+
+DELIMITER ;
+
 
 -- 코스
+
+DELIMITER //
+
 CREATE TRIGGER after_report_state_update_course
 AFTER UPDATE ON REPORT_COURSE
 FOR EACH ROW
@@ -119,6 +158,21 @@ BEGIN
 
     -- Check if the report_course_state has been updated to 'accept'
     IF NEW.report_course_state = 'accept' THEN
+        -- 코스를 정지 상태로 변경
+        UPDATE TRIP_COURSE
+           SET trip_course_state = 'ban'
+         WHERE trip_course_no = NEW.trip_course_no
+         LIMIT 1;
+        
+        -- 코스 작성자를 정지 상태로 변경
+        UPDATE USER_INFO
+           SET user_account_state = 'ban'
+         WHERE user_no = (SELECT TRIP_COURSE.trip_course_user_no
+                                     FROM REPORT_COURSE
+                                     JOIN TRIP_COURSE USING (trip_course_no)
+                                    WHERE TRIP_COURSE.trip_course_no = NEW.trip_course_no
+                                    LIMIT 1);
+
         -- Get the user_no of the user who will be suspended
         SELECT ui.user_no
         INTO v_user_no
@@ -149,9 +203,15 @@ BEGIN
             NEW.report_reason_code
         );
     END IF;
-END ;
+END //
+
+DELIMITER ;
+
 
 -- 동행
+
+DELIMITER //
+
 CREATE TRIGGER after_report_state_update_partner
 AFTER UPDATE ON REPORT_PARTNER
 FOR EACH ROW
@@ -161,6 +221,21 @@ BEGIN
 
     -- Check if the report_company_state has been updated to 'accept'
     IF NEW.report_company_state = 'accept' THEN
+        -- 동행을 정지 상태로 변경
+        UPDATE TRIP_COMPANY
+           SET trip_company_status = 'ban'
+         WHERE trip_company_no = NEW.trip_company_no
+         LIMIT 1;
+        
+        -- 동행 작성자를 정지 상태로 변경
+        UPDATE USER_INFO
+           SET user_account_state = 'ban'
+         WHERE user_no = (SELECT TRIP_COMPANY.trip_company_user_no
+                                     FROM REPORT_PARTNER
+                                     JOIN TRIP_COMPANY USING (trip_company_no)
+                                    WHERE TRIP_COMPANY.trip_company_no = NEW.trip_company_no
+                                    LIMIT 1);
+
         -- Get the user_no of the user who will be suspended
         SELECT ui.user_no
         INTO v_user_no
@@ -191,6 +266,6 @@ BEGIN
             NEW.report_reason_code
         );
     END IF;
-END ;
+END //
 
 DELIMITER ;
