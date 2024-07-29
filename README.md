@@ -2,7 +2,7 @@
 
 
 
-# <center>[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=450&size=50&letterSpacing=6px&pause=1000&color=F7F22D&background=2C0361F7&center=true&vCenter=true&width=1100&height=80&lines=%F0%9F%9A%80COMMIT+CREW%F0%9F%8C%8F)](https://git.io/typing-svg)</center>
+# <center>[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=450&size=50&letterSpacing=6px&pause=1000&color=F7F22D&background=2C0361F7&center=true&vCenter=true&width=1100&height=80&lines=%F0%9F%9A%80COMMIT+CREW%F0%9F%8C%8F)](https://github.com/beyond-sw-camp/be10-1st-commitCrew-tripCrew)</center>
 
   <div style="text-align: center;">
   <strong>Github 마스터가 되기 위한 CREW 모임</strong>
@@ -131,12 +131,21 @@
 - 다양한 취향 중에서 자신이 어떤 취향을 가지고 있는지 선택할 수 있습니다.
 - 이 취향을 바탕으로 비슷한 취향을 가진 여행자나 그 여행자가 등록한 여행 코스를 추천받을 수 있습니다.
 
-## 5. 요구사항 명세서 작성
+## 5. 요구사항 명세서
 <details>
 <summary>요구사항 명세서</summary>
 <div markdown="1">
 
 ![요구사항 명세서](assets/images/요구사항명세서.png)
+
+</div>
+</details>
+
+<details>
+<summary>WBS</summary>
+<div markdown="1">
+
+![WBS](assets/images/WBS.png)
 
 </div>
 </details>
@@ -273,7 +282,16 @@ crontab -e
 
 ## 10. 테스트 결과서(테스트 쿼리문 포함)
 
-## 사용자
+<details>
+<summary>테스트 케이스 정의서</summary>
+<div markdown="1">
+
+![테스트 케이스 정의서](assets/images/테스트케이스.png)
+
+</div>
+</details>
+
+### 사용자
 
 <details>
 <summary>사용자</summary>
@@ -420,7 +438,7 @@ crontab -e
 </div>
 </details>
 
-## 취향
+### 취향
 
 <details>
 <summary>취향</summary>
@@ -564,7 +582,7 @@ crontab -e
 
 
 
-## 게시판
+### 게시판
 
 <details>
 <summary>게시판</summary>
@@ -771,7 +789,7 @@ crontab -e
 
 
 
-## 여행 코스
+### 여행 코스
 
 <details>
 <summary>여행 코스</summary>
@@ -875,7 +893,7 @@ crontab -e
 <summary>코스 삭제</summary>
 <div markdown="1">
 
-![코스 삭제](assets/images/코스삭제.png)
+![코스 삭제](assets/images/코스삭제1.png)
 
 
 </div>
@@ -1023,7 +1041,7 @@ crontab -e
 </details>
 
 
-## 신고
+### 신고
 
 <details>
 <summary>신고</summary>
@@ -1234,7 +1252,7 @@ crontab -e
 </div>
 </details>
 
-## 알림
+### 알림
 
 
 <details>
@@ -1308,17 +1326,6 @@ crontab -e
 ###
 
 <details>
-<summary>좋아요 알림 발송</summary>
-<div markdown="1">
-
-![좋아요 알림 발송](assets/images/리뷰%20좋아요%20시%20리뷰%20작성자에게%20알림%20발송.png)
-
-</div>
-</details> 
-
-###
-
-<details>
 <summary>별점 알림 발송</summary>
 <div markdown="1">
 
@@ -1364,6 +1371,12 @@ crontab -e
 </details>
 
 ## 11. 트러블슈팅
+||내용|
+|-|-|
+|1|쿼리문 작성 과정에서 트리거를 통한 로직 구현에 있어 자동 마감를 구현하고자 하였으나 트리거의 update문과 db 접근과 참가자를 수락하기 위한 insert의 db 접근이 동시에 일어나는 문제를 해결하지 못해 트리거를 삭제하게 되었습니다. 이부분의 해결을 위해서 충돌을 피하기 위해 트리거 문을 수정하는 작업을 진행했어야 됐던 것 같습니다.|
+|2|각자의 PC에서 작업을 하다가 효율성을 위해서 같은 DB서버를 사용하기로 하였을 때, 간단하게 생각했는데 Replication 적용을 하면서 많은 문제를 만나게 되었습니다. Replication을 적용하면 단순히 복제가 되는 것으로 생각을 했는데 Master의 변경 사항을 Slave에 그대로 Slave에 전달하는 구조를 이해하고 나서 해결의 실마리가 보였던 것 같습니다. 이후에 기존에 운영중이던 DB 중 불필요한 서비스를 내리고 추가로 나머지 DB는 Master를 Slave에 복제한 후에 Replication을 적용하여 해결하였습니다.|
+|3|프로젝트에서 알림 발송 쪽을 구현하면서 템플릿의 내용에 값들을 변경하여 알림을 발송하고 싶었습니다. 하지만 백엔드 측으로 구현가능한 내용을 데이터베이스로 처리하려다 보니 어려움을 겪었고 트리거와 REPLACE 함수를 이용해 만들어보았는데 그렇게 쿼리를 작성 하다보니 테이블 구조 쪽에 문제가 생겨 정규화가 전혀 진행되지 않은 테이블이 아니고선 구현이 되지 않는 상황을 맞닥뜨렸습니다. 이런 테이블 구조로는 쿼리를 복잡하게 짜서 칭찬을 받기보다 테이블 구조가 문제가 있다는 말을 듣게될 것 같아 강사님께도 질문드려보고 하였습니다. 하지만 데이터베이스 챕터를 한다고해서 꼭 서비스 측면을 데이터베이스로 구현할 필요가 없다는 것을 알아차리고 팀원들과 함께 고민한 끝에 뜻을 맞춰 하드코딩으로 알림 발송 트리거를 만들게되었습니다.|
+
 
 ## 12. 팀 회고
 |팀원|회고 내용|
