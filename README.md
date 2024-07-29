@@ -278,7 +278,7 @@ crontab -e
 <summary>회원가입(아이디 중복 확인)</summary>
 <div markdown="1">
 
-![회원가입(아이디 중복 확인)](captureDownload/회원가입.png)
+![회원가입(아이디 중복 확인)](assets/images/회원가입.png)
 
 </div>
 </details>
@@ -289,7 +289,7 @@ crontab -e
 <summary>회원정보조회_아이디</summary>
 <div markdown="1">
 
-![회원정보조회_아이디](captureDownload/회원정보조회_아이디.png)
+![회원정보조회_아이디](assets/images/회원정보조회_아이디.png)
 
 </div>
 </details>
@@ -301,7 +301,7 @@ crontab -e
 <summary>회원정보조회_성별</summary>
 <div markdown="1">
 
-![회원정보조회_성별](captureDownload/회원정보조회_성별.png)
+![회원정보조회_성별](assets/images/회원정보조회_성별.png)
 
 </div>
 </details>
@@ -313,7 +313,7 @@ crontab -e
 <summary>관리자 등록 변경</summary>
 <div markdown="1">
 
-![관리자등록변경](captureDownload/관리자_등록_변경.png)
+![관리자등록변경](assets/images/관리자_등록_변경.png)
 
 </div>
 </details>
@@ -327,7 +327,7 @@ crontab -e
 <summary>회원 정보 변경</summary>
 <div markdown="1">
 
-![회원정보변경](captureDownload/회원_정보_변경_비번.png)
+![회원정보변경](assets/images/회원_정보_변경_비번.png)
 
 </div>
 </details>
@@ -340,7 +340,7 @@ crontab -e
 <summary>회원 탈퇴</summary>
 <div markdown="1">
 
-![회원탈퇴](captureDownload/회원탈퇴.png)
+![회원탈퇴](assets/images/회원탈퇴.png)
 
 </div>
 </details>
@@ -353,7 +353,7 @@ crontab -e
 <summary>회원 공개 정보 변경</summary>
 <div markdown="1">
 
-![회원공개정보변경](captureDownload/회원공개정보변경.png)
+![회원공개정보변경](assets/images/회원공개정보변경.png)
 
 </div>
 </details>
@@ -375,7 +375,7 @@ crontab -e
 <summary>아이디 정보 조회(디비에 있는 경우)</summary>
 <div markdown="1">
 
-![아이디정보조회_있는경우](captureDownload/아이디정보조회_있는경우.png)
+![아이디정보조회_있는경우](assets/images/아이디정보조회_있는경우.png)
 
 </div>
 </details>
@@ -388,7 +388,7 @@ crontab -e
 <summary>아이디 정보 조회(디비에 없는 경우)</summary>
 <div markdown="1">
 
-![아이디정보조회_없는경우](captureDownload/아이디정보조회_없는경우.png)
+![아이디정보조회_없는경우](assets/images/아이디정보조회_없는경우.png)
 
 </div>
 </details>
@@ -401,7 +401,7 @@ crontab -e
 <summary>비밀번호 교체 주기 확인</summary>
 <div markdown="1">
 
-![비밀번호교체주기](captureDownload/비밀번호교체주기.png)
+![비밀번호교체주기](assets/images/비밀번호교체주기.png)
 
 </div>
 </details>
