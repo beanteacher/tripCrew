@@ -2,10 +2,12 @@
 
 
 
-# <center>[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=450&size=50&letterSpacing=6px&pause=1000&color=F7F22D&background=2C0361F7&center=true&vCenter=true&width=600&height=80&lines=%F0%9F%9A%80COMMIT+CREW%F0%9F%8C%8F)](https://git.io/typing-svg)</center>
+# <center>[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=450&size=50&letterSpacing=6px&pause=1000&color=F7F22D&background=2C0361F7&center=true&vCenter=true&width=1100&height=80&lines=%F0%9F%9A%80COMMIT+CREW%F0%9F%8C%8F)](https://git.io/typing-svg)</center>
 
   <div style="text-align: center;">
   <strong>Github 마스터가 되기 위한 CREW 모임</strong>
+
+
 </div>
 
 
@@ -66,7 +68,7 @@
 
 
 <p align="center">
-  <img src="assets/images/자유여행.png" alt="Untitled" width="300" />
+  <img src="assets/images/자유여행.png" alt="Untitled" width="400" />
 </p>
 
 - **유엔 세계 관광 기구(UNWTO)**: 세계 관광 동향을 분석하는 UNWTO의 보고서에 따르면, 젊은 세대(밀레니얼 세대 및 Z세대)를 중심으로 패키지 여행 보다는 자유 여행 떠나는 여행자 수가 지속적으로 증가하고 있습니다.
