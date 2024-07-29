@@ -1,25 +1,26 @@
 ![](assets/images/banner.jpg)
 
-# 프로젝트 개요
 
-## 🚨 **커밋크루(Commit Crew)**
 
-Github 마스터가 되기 위한 Crew 모임
+# <center>[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=450&size=50&letterSpacing=6px&pause=1000&color=F7F22D&background=2C0361F7&center=true&vCenter=true&width=600&height=80&lines=%F0%9F%9A%80COMMIT+CREW%F0%9F%8C%8F)](https://git.io/typing-svg)</center>
 
-### 👩🏻‍💻 **구성원**
+  <div style="text-align: center;">
+  <strong>Github 마스터가 되기 위한 CREW 모임</strong>
+</div>
 
-박지훈
 
-박희찬
+| [![](https://avatars.githubusercontent.com/u/87793524?v=4)](https://github.com/dispear) | [![](https://avatars.githubusercontent.com/u/115945994?v=4)](https://github.com/hcbak) | [![](https://avatars.githubusercontent.com/u/99578261?v=4)](https://github.com/beanteacher) | [![](https://avatars.githubusercontent.com/u/173458380?v=4)](https://github.com/JIYOUNG-22) | [![](https://avatars.githubusercontent.com/u/58172997?v=4)](https://github.com/enking) | [![](https://avatars.githubusercontent.com/u/132972216?v=4)](https://github.com/HanDJ00)|
+|---|---|---|---|---|---|
+| 박지훈 | 박희찬 | 오민성 | 윤지영 | 최두혁 | 한동주
 
-오민성
 
-한동주 
 
-최두혁
+<br>
+<br>
+<br>
 
-윤지영 
 
+# 프로젝트 개요 
 
 ## 1. 프로젝트 주제
 
@@ -27,11 +28,14 @@ Github 마스터가 되기 위한 Crew 모임
 
 여행 계획, 동행 구하기, 후기 공유를 통해 패키지 여행의 장점과 자유 여행의 장점을 합쳐 만든 여행 소셜 플랫폼 
 
+
 ## 2. 프로젝트 소개
 
 > 🚀 여행 일정을 계획 할 때 어느 관광 명소를 갈지, 어느 리조트에서 잘 지 고민이 많으시죠? 
 본인의 취향을 선택해보세요! 같은 취향을 가진 동료들의 여행 후기를 추천해드립니다! 
 마음에 들었다면 같은 여행 코스로 여행을 계획하거나, 게시글 작성자의 다른 여행 계획에 참여해보세요!
+
+<br>
 
 **TRIP_CREW**는 여행 동행 기능과 여행 후기 기능을 결합하여 사용자들의 여행 계획을 구체화하고, 새로운 경험을 공유하며, 소통을 넓힐 수 있는 좋은 기회를 제공합니다.
 
@@ -40,6 +44,7 @@ Github 마스터가 되기 위한 Crew 모임
 사용자는 본인이 계획한 여행 코스를  등록하고 함께할 여행 동행 CREW를 모집할 수도 있습니다. 
 
 여행을 즐기는 사람들에게 소중한 동행을 찾을 수 있는 기회를 제공하고, 다양한 여행 후기를 통해 다른 사용자들에게 유익한 정보를 제공하여 여행 경험을 더욱 풍부하게 해 줄 것입니다.
+
 
 ## 3. 프로젝트 배경 및 필요성
 
@@ -59,7 +64,10 @@ Github 마스터가 되기 위한 Crew 모임
 
 ### 3-2. 자유여행 선호
 
-![Untitled](assets/images/자유여행.png)
+
+<p align="center">
+  <img src="assets/images/자유여행.png" alt="Untitled" width="300" />
+</p>
 
 - **유엔 세계 관광 기구(UNWTO)**: 세계 관광 동향을 분석하는 UNWTO의 보고서에 따르면, 젊은 세대(밀레니얼 세대 및 Z세대)를 중심으로 패키지 여행 보다는 자유 여행 떠나는 여행자 수가 지속적으로 증가하고 있습니다.
 
@@ -121,9 +129,7 @@ Github 마스터가 되기 위한 Crew 모임
 - 다양한 취향 중에서 자신이 어떤 취향을 가지고 있는지 선택할 수 있습니다.
 - 이 취향을 바탕으로 비슷한 취향을 가진 여행자나 그 여행자가 등록한 여행 코스를 추천받을 수 있습니다.
 
-## 5. 서비스 차별화 전략
-
-## 6. 요구사항 명세서 작성
+## 5. 요구사항 명세서 작성
 <details>
 <summary>요구사항 명세서</summary>
 <div markdown="1">
@@ -133,7 +139,7 @@ Github 마스터가 되기 위한 Crew 모임
 </div>
 </details>
 
-## 7. UML, 플로우차트
+## 6. UML, 플로우차트
 <details>
 <summary>UML</summary>
 <div markdown="1">
@@ -151,7 +157,7 @@ Github 마스터가 되기 위한 Crew 모임
 </div>
 </details>
 
-## 8. 논리 ERD, 물리 ERD
+## 7. 논리 ERD, 물리 ERD
 <details>
 <summary>논리 ERD</summary>
 <div markdown="1">
@@ -170,7 +176,7 @@ Github 마스터가 되기 위한 Crew 모임
 </div>
 </details>
 
-## 9. 테이블 정의서(DDL 쿼리문 포함)
+## 8. 테이블 정의서(DDL 쿼리문 포함)
 <details>
 <summary>테이블 정의서</summary>
 <div markdown="1">
@@ -180,9 +186,9 @@ Github 마스터가 되기 위한 Crew 모임
 </div>
 </details>
 
-## 10. 백업 계획
+## 9. 백업 계획
 
-### 10-1 Replication
+### 9-1 Replication
 
 DB 서버의 부하 분산과 데이터 백업을 위해 Replication을 적용하였습니다.
 
@@ -221,7 +227,7 @@ tail -f /var/log/mariadb-replication-slave-status.log
 </details>
 
 
-### 10-2 mysqldump
+### 9-2 mysqldump
 
 Replication은 실시간 복제를 담당하므로 거기에 더해서 이력을 남기기 위해서 cron으로 mysqldump를 스케줄링하였습니다.
 
@@ -263,7 +269,7 @@ crontab -e
 </details>
 
 
-## 11. 테스트 결과서(테스트 쿼리문 포함)
+## 10. 테스트 결과서(테스트 쿼리문 포함)
 <details>
 <summary>취향</summary>
 <div markdown="1">
@@ -403,3 +409,15 @@ crontab -e
 
 </div>
 </details>
+
+## 11. 트러블슈팅
+
+## 12. 팀 회고
+|팀원|회고 내용|
+|:---:|-|
+|박지훈|첫 팀 프로젝트라 어떤 식으로 진행해야 할지 막막하고 감이 안왔지만 좋은 팀원분들과 진행하게 되어 생각보다 막힘없이 프로젝트가 진행된것 같습니다. 쿼리 작성에 있어 부족함이 많았고, 구현을 원하는대로 하지못한 것 같아 아쉽지만 다음에 더 나아진 프로젝트가 되기위한 밑거름이 된 것이라 생각합니다.|
+|박희찬|간단하게 생각했는데 백엔드 없이 DB로 기능을 구현하느라 많이 힘들었던 것 같습니다. 팀원 분들의 도움이 없었으면 못 참고 백엔드를 먼저 개발했을수도... 하나의 팀으로 하나의 결과물을 만들 수 있어서 좋았습니다. 모두 감사합니다.|
+|오민성|DB 관련 프로젝트를 하면서 DB내용으로는 용어에 많이 익숙해졌고 트리거 생성에 대해 자세히 알게됐다. 같이 협업해서 팀원들과 많이 친해져서 좋았고 재밌었다. 또한 협업툴에 대해 잘 배웠고 하다보니 재밌다는 것을 느꼈습니다.|
+|윤지영|이번 팀 프로젝트를 통해 이론으로 배웠던 내용을 직접 팀원분들과 실습해보는 기회를 가질 수 있어서 좋았습니다. 팀프로젝트를 하면서 Database를 생성하고 DDL, DML이 어느정도 진행된 후에는 사소한 부분이라도 변경하기 어렵다는 것을 느꼈고 이를 통해 사용자의 요구사항을 분석하고 DB모델링을 잘 설계하는 단계가 매우 중요하다는 것을 깨달았습니다. 이런 일련의 과정을 성실하고 잘 도와주는 착한 팀원분들과 함께 진행할 수 있어서 즐거웠습니다!|
+|최두혁|각자의 자리에서 각자의 역할을 한 팀 프로젝트였다. 한 마음으로 하나의 과제를 하겠다는 의지가 빚어낸 결과물이다. 더 나은 개발자가 되기 위한 연습이니 결과와 상관 없이 과정에 만족할 수 있었던 프로젝트인거 같다. 프로젝트를 진행하면서 수업 시간에 배우지 못했던 개념들도 배우고, 협업 과정을 조금이라도 흉내를 내본 거 같아 마음이 뿌듯하다. 많은걸 알려주고 가르쳐준 우리 팀원들에게 고맙다.♥|
+|한동주 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|프로젝트 진행하면서 이렇게 자주 의문을 가지고 서로 질문하고 결과를 도출하려고 하는 팀은 처음이어서 좋은 경험이 되었습니다. 조금이라도 의문이 생기는 부분은 대충 넘기려 하지 않고 각자 의문이 해소될 때 까지 의견을 교환하고 납득하여 생산적인 프로젝트가 될 수 있었던 것 같습니다. 팀원들 다들 감사합니다!!|
