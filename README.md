@@ -648,10 +648,10 @@ crontab -e
 ###
 
 <details>
-<summary>게시글 조회-작성자 기준</summary>
+<summary>게시글 조회-작성일자 기준</summary>
 <div markdown="1">
 
-![게시글 조회-작성자 기준](assets/images/게시글조회(작성자기준).png)
+![게시글 조회-작성자 기준](assets/images/게시글조회(작성일자기준).png)
 
 </div>
 </details>
