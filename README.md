@@ -272,6 +272,173 @@ crontab -e
 
 
 ## 10. 테스트 결과서(테스트 쿼리문 포함)
+
+
+## 11. 트러블슈팅
+
+## 12. 팀 회고
+|팀원|회고 내용|
+|:---:|-|
+|박지훈|첫 팀 프로젝트라 어떤 식으로 진행해야 할지 막막하고 감이 안왔지만 좋은 팀원분들과 진행하게 되어 생각보다 막힘없이 프로젝트가 진행된것 같습니다. 쿼리 작성에 있어 부족함이 많았고, 구현을 원하는대로 하지못한 것 같아 아쉽지만 다음에 더 나아진 프로젝트가 되기위한 밑거름이 된 것이라 생각합니다.|
+|박희찬|간단하게 생각했는데 백엔드 없이 DB로 기능을 구현하느라 많이 힘들었던 것 같습니다. 팀원 분들의 도움이 없었으면 못 참고 백엔드를 먼저 개발했을수도... 하나의 팀으로 하나의 결과물을 만들 수 있어서 좋았습니다. 모두 감사합니다.|
+|오민성|DB 관련 프로젝트를 하면서 DB내용으로는 용어에 많이 익숙해졌고 트리거 생성에 대해 자세히 알게됐다. 같이 협업해서 팀원들과 많이 친해져서 좋았고 재밌었다. 또한 협업툴에 대해 잘 배웠고 하다보니 재밌다는 것을 느꼈습니다.|
+|윤지영|이번 팀 프로젝트를 통해 이론으로 배웠던 내용을 직접 팀원분들과 실습해보는 기회를 가질 수 있어서 좋았습니다. 팀프로젝트를 하면서 Database를 생성하고 DDL, DML이 어느정도 진행된 후에는 사소한 부분이라도 변경하기 어렵다는 것을 느꼈고 이를 통해 사용자의 요구사항을 분석하고 DB모델링을 잘 설계하는 단계가 매우 중요하다는 것을 깨달았습니다. 이런 일련의 과정을 성실하고 잘 도와주는 착한 팀원분들과 함께 진행할 수 있어서 즐거웠습니다!|
+|최두혁|각자의 자리에서 각자의 역할을 한 팀 프로젝트였다. 한 마음으로 하나의 과제를 하겠다는 의지가 빚어낸 결과물이다. 더 나은 개발자가 되기 위한 연습이니 결과와 상관 없이 과정에 만족할 수 있었던 프로젝트인거 같다. 프로젝트를 진행하면서 수업 시간에 배우지 못했던 개념들도 배우고, 협업 과정을 조금이라도 흉내를 내본 거 같아 마음이 뿌듯하다. 많은걸 알려주고 가르쳐준 우리 팀원들에게 고맙다.♥|
+|한동주 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|프로젝트 진행하면서 이렇게 자주 의문을 가지고 서로 질문하고 결과를 도출하려고 하는 팀은 처음이어서 좋은 경험이 되었습니다. 조금이라도 의문이 생기는 부분은 대충 넘기려 하지 않고 각자 의문이 해소될 때 까지 의견을 교환하고 납득하여 생산적인 프로젝트가 될 수 있었던 것 같습니다. 팀원들 다들 감사합니다!!|
+
+
+
+
+## 사용자
+
+<details>
+<summary>사용자</summary>
+<div markdown="1">
+
+<details>
+<summary>회원관리</summary>
+<div markdown="1">
+<details>
+<summary>회원가입(아이디 중복 확인)</summary>
+<div markdown="1">
+
+![회원가입(아이디 중복 확인)](assets/images/회원가입.png)
+
+</div>
+</details>
+
+###
+
+<details>
+<summary>회원정보조회_아이디</summary>
+<div markdown="1">
+
+![회원정보조회_아이디](assets/images/회원정보조회_아이디.png)
+
+</div>
+</details>
+
+###
+
+
+<details>
+<summary>회원정보조회_성별</summary>
+<div markdown="1">
+
+![회원정보조회_성별](assets/images/회원정보조회_성별.png)
+
+</div>
+</details>
+
+###
+
+
+<details>
+<summary>관리자 등록 변경</summary>
+<div markdown="1">
+
+![관리자등록변경](assets/images/관리자_등록_변경.png)
+
+</div>
+</details>
+
+
+###
+
+
+
+<details>
+<summary>회원 정보 변경</summary>
+<div markdown="1">
+
+![회원정보변경](assets/images/회원_정보_변경_비번.png)
+
+</div>
+</details>
+
+###
+
+
+
+<details>
+<summary>회원 탈퇴</summary>
+<div markdown="1">
+
+![회원탈퇴](assets/images/회원탈퇴.png)
+
+</div>
+</details>
+
+
+###
+
+
+<details>
+<summary>회원 공개 정보 변경</summary>
+<div markdown="1">
+
+![회원공개정보변경](assets/images/회원공개정보변경.png)
+
+</div>
+</details>
+
+</div>
+</details>
+
+
+
+
+
+
+<details>
+<summary>로그인</summary>
+<div markdown="1">
+
+
+<details>
+<summary>아이디 정보 조회(디비에 있는 경우)</summary>
+<div markdown="1">
+
+![아이디정보조회_있는경우](assets/images/아이디정보조회_있는경우.png)
+
+</div>
+</details>
+
+###
+
+
+
+<details>
+<summary>아이디 정보 조회(디비에 없는 경우)</summary>
+<div markdown="1">
+
+![아이디정보조회_없는경우](assets/images/아이디정보조회_없는경우.png)
+
+</div>
+</details>
+
+
+###
+
+
+<details>
+<summary>비밀번호 교체 주기 확인</summary>
+<div markdown="1">
+
+![비밀번호교체주기](assets/images/비밀번호교체주기.png)
+
+</div>
+</details>
+
+</div>
+</details>
+
+</div>
+</details>
+
+## 취향
+
+>>>>>>> main
 <details>
 <summary>취향</summary>
 <div markdown="1">
@@ -286,7 +453,7 @@ crontab -e
 </div>
 </details>
 
-
+###
 
 <details>
 <summary>사용자 취향 저장</summary>
@@ -297,7 +464,7 @@ crontab -e
 </div>
 </details>
 
-
+###
 
 <details>
 <summary>사용자 취향 삭제</summary>
@@ -308,7 +475,7 @@ crontab -e
 </div>
 </details>
 
-
+###
 
 <details>
 <summary>사용자 취향 수정</summary>
@@ -319,7 +486,7 @@ crontab -e
 </div>
 </details>
 
-
+###
 
 <details>
 <summary>게시글 취향 호출</summary>
@@ -330,7 +497,7 @@ crontab -e
 </div>
 </details>
 
-
+###
 
 <details>
 <summary>게시글 취향 저장</summary>
@@ -341,7 +508,7 @@ crontab -e
 </div>
 </details>
 
-
+###
 
 <details>
 <summary>게시글 취향 삭제</summary>
@@ -352,7 +519,7 @@ crontab -e
 </div>
 </details>
 
-
+###
 
 <details>
 <summary>게시글 취향 수정</summary>
@@ -363,7 +530,7 @@ crontab -e
 </div>
 </details>
 
-
+###
 
 <details>
 <summary>여행 코스 취향 호출</summary>
@@ -374,7 +541,7 @@ crontab -e
 </div>
 </details>
 
-
+###
 
 <details>
 <summary>여행 코스 취향 저장</summary>
@@ -385,7 +552,7 @@ crontab -e
 </div>
 </details>
 
-
+###
 
 <details>
 <summary>여행 코스 취향 삭제</summary>
@@ -396,7 +563,7 @@ crontab -e
 </div>
 </details>
 
-
+###
 
 <details>
 <summary>여행 코스 취향 수정</summary>
@@ -412,14 +579,675 @@ crontab -e
 </div>
 </details>
 
-## 11. 트러블슈팅
 
-## 12. 팀 회고
-|팀원|회고 내용|
-|:---:|-|
-|박지훈|첫 팀 프로젝트라 어떤 식으로 진행해야 할지 막막하고 감이 안왔지만 좋은 팀원분들과 진행하게 되어 생각보다 막힘없이 프로젝트가 진행된것 같습니다. 쿼리 작성에 있어 부족함이 많았고, 구현을 원하는대로 하지못한 것 같아 아쉽지만 다음에 더 나아진 프로젝트가 되기위한 밑거름이 된 것이라 생각합니다.|
-|박희찬|간단하게 생각했는데 백엔드 없이 DB로 기능을 구현하느라 많이 힘들었던 것 같습니다. 팀원 분들의 도움이 없었으면 못 참고 백엔드를 먼저 개발했을수도... 하나의 팀으로 하나의 결과물을 만들 수 있어서 좋았습니다. 모두 감사합니다.|
-|오민성|DB 관련 프로젝트를 하면서 DB내용으로는 용어에 많이 익숙해졌고 트리거 생성에 대해 자세히 알게됐다. 같이 협업해서 팀원들과 많이 친해져서 좋았고 재밌었다. 또한 협업툴에 대해 잘 배웠고 하다보니 재밌다는 것을 느꼈습니다.|
-|윤지영|이번 팀 프로젝트를 통해 이론으로 배웠던 내용을 직접 팀원분들과 실습해보는 기회를 가질 수 있어서 좋았습니다. 팀프로젝트를 하면서 Database를 생성하고 DDL, DML이 어느정도 진행된 후에는 사소한 부분이라도 변경하기 어렵다는 것을 느꼈고 이를 통해 사용자의 요구사항을 분석하고 DB모델링을 잘 설계하는 단계가 매우 중요하다는 것을 깨달았습니다. 이런 일련의 과정을 성실하고 잘 도와주는 착한 팀원분들과 함께 진행할 수 있어서 즐거웠습니다!|
-|최두혁|각자의 자리에서 각자의 역할을 한 팀 프로젝트였다. 한 마음으로 하나의 과제를 하겠다는 의지가 빚어낸 결과물이다. 더 나은 개발자가 되기 위한 연습이니 결과와 상관 없이 과정에 만족할 수 있었던 프로젝트인거 같다. 프로젝트를 진행하면서 수업 시간에 배우지 못했던 개념들도 배우고, 협업 과정을 조금이라도 흉내를 내본 거 같아 마음이 뿌듯하다. 많은걸 알려주고 가르쳐준 우리 팀원들에게 고맙다.♥|
-|한동주 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|프로젝트 진행하면서 이렇게 자주 의문을 가지고 서로 질문하고 결과를 도출하려고 하는 팀은 처음이어서 좋은 경험이 되었습니다. 조금이라도 의문이 생기는 부분은 대충 넘기려 하지 않고 각자 의문이 해소될 때 까지 의견을 교환하고 납득하여 생산적인 프로젝트가 될 수 있었던 것 같습니다. 팀원들 다들 감사합니다!!|
+
+## 게시판
+
+<details>
+<summary>게시판</summary>
+<div markdown="1">
+
+<details>
+<summary>게시글 등록</summary>
+<div markdown="1">
+
+![게시글 등록](assets/images/게시글등록.png)
+
+</div>
+</details>
+
+###
+
+<details>
+<summary>게시글 임시 저장</summary>
+<div markdown="1">
+
+![게시글 임시저장](assets/images/게시글임시저장.png)
+
+</div>
+</details>
+
+###
+
+<details>
+<summary>게시글 수정</summary>
+<div markdown="1">
+
+![게시글 수정](assets/images/게시글수정.png)
+
+</div>
+</details>
+
+###
+
+<details>
+<summary>게시글 삭제</summary>
+<div markdown="1">
+
+![게시글 삭제](assets/images/게시글삭제.png)
+
+</div>
+</details>
+
+###
+
+<details>
+<summary>게시글 조회-작성자 기준</summary>
+<div markdown="1">
+
+![게시글 조회-작성자 기준](assets/images/게시글조회(작성자기준).png)
+
+</div>
+</details>
+
+###
+
+<details>
+<summary>게시글 조회-조회수 정렬</summary>
+<div markdown="1">
+
+![게시글 조회-조회수 높은순](assets/images/게시글조회(조회수높은순).png)
+
+</div>
+</details>
+
+###
+
+<details>
+<summary>게시글 상세조회</summary>
+<div markdown="1">
+
+![게시글 상세조회](assets/images/게시글상세조회.png)
+
+</div>
+</details>
+
+###
+
+<details>
+<summary>별점 등록</summary>
+<div markdown="1">
+
+![별점 등록](assets/images/별점등록.png)
+
+</div>
+</details>
+
+###
+
+<details>
+<summary>별점 수정</summary>
+<div markdown="1">
+
+![별점 수정](assets/images/별점수정.png)
+
+</div>
+</details>
+
+###
+
+<details>
+<summary>별점 삭제</summary>
+<div markdown="1">
+
+![별점 삭제](assets/images/별점삭제.png)
+
+</div>
+</details>
+
+###
+
+<details>
+<summary>댓글 등록</summary>
+<div markdown="1">
+
+![댓글 등록](assets/images/댓글등록.png)
+
+</div>
+</details>
+
+###
+
+<details>
+<summary>댓글 수정</summary>
+<div markdown="1">
+
+![댓글 수정](assets/images/댓글수정.png)
+
+</div>
+</details>
+
+###
+
+<details>
+<summary>댓글 삭제</summary>
+<div markdown="1">
+
+![댓글 삭제](assets/images/댓글삭제.png)
+
+</div>
+</details>
+
+###
+
+<details>
+<summary>댓글 조회</summary>
+<div markdown="1">
+
+![댓글 조회](assets/images/댓글조회.png)
+
+</div>
+</details>
+
+###
+
+<details>
+<summary>댓글 좋아요 등록</summary>
+<div markdown="1">
+
+![댓글 좋아요 등록](assets/images/댓글좋아요등록.png)
+
+</div>
+</details>
+
+###
+
+<details>
+<summary>댓글 좋아요 삭제</summary>
+<div markdown="1">
+
+![댓글 좋아요 삭제](assets/images/댓글좋아요삭제.png)
+
+</div>
+</details>
+
+###
+
+<details>
+<summary>게시글 작성자 프로필 조회</summary>
+<div markdown="1">
+
+![게시글 작성자 프로필 조회](assets/images/게시글작성자프로필조회.png)
+
+</div>
+</details>
+
+###
+
+<details>
+<summary>댓글 작성자 프로필 조회</summary>
+<div markdown="1">
+
+![댓글 작성자 프로필 조회](assets/images/댓글작성자프로필조회.png)
+
+</div>
+</details>
+
+</div>
+</details>
+
+
+
+## 여행 코스
+
+<details>
+<summary>여행 코스</summary>
+<div markdown="1">
+
+
+
+<details>
+<summary>나라 등록</summary>
+<div markdown="1">
+
+![나라 등록](assets/images/나라등록.png)
+
+</div>
+</details>
+
+###
+
+<details>
+<summary>나라 수정</summary>
+<div markdown="1">
+
+![나라 수정](assets/images/나라수정.png)
+
+</div>
+</details>
+
+###
+
+<details>
+<summary>나라 삭제</summary>
+<div markdown="1">
+
+![나라 삭제](assets/images/나라삭제.png)
+
+</div>
+</details>
+
+###
+
+<details>
+<summary>도시 등록</summary>
+<div markdown="1">
+
+![도시 등록](assets/images/도시등록.png)
+
+</div>
+</details>
+
+###
+
+<details>
+<summary>도시 수정</summary>
+<div markdown="1">
+
+![도시 수정](assets/images/도시수정.png)
+
+</div>
+</details>
+
+###
+
+<details>
+<summary>도시 삭제</summary>
+<div markdown="1">
+
+![도시 삭제](assets/images/도시삭제.png)
+
+</div>
+</details>
+
+###
+
+<details>
+<summary>코스 등록</summary>
+<div markdown="1">
+
+![코스 등록1](assets/images/코스등록1.png)
+![코스 등록2](assets/images/코스등록2.png)
+
+
+</div>
+</details>
+
+###
+
+<details>
+<summary>코스 수정</summary>
+<div markdown="1">
+
+![코스 수정1](assets/images/코스수정1.png)
+![코스 수정2](assets/images/코스수정2.png)
+
+
+</div>
+</details>
+
+###
+
+<details>
+<summary>코스 삭제</summary>
+<div markdown="1">
+
+![코스 삭제](assets/images/코스삭제.png)
+
+
+</div>
+</details>
+
+###
+
+<details>
+<summary>코스 전체 조회 & 검색</summary>
+<div markdown="1">
+
+![코스 전체 조회1](assets/images/코스전체조회1.png)
+![코스 전체 조회2](assets/images/코스전체조회2.png)
+
+
+</div>
+</details>
+
+###
+
+<details>
+<summary>코스 상세 조회</summary>
+<div markdown="1">
+
+![코스 상세 조회](assets/images/코스상세조회.png)
+
+
+</div>
+</details>
+
+###
+
+<details>
+<summary>여행 동행 모집 등록</summary>
+<div markdown="1">
+
+![여행 동행 모집 등록](assets/images/여행동행모집등록.png)
+
+</div>
+</details>
+
+###
+
+<details>
+<summary>여행 동행 모집 수정</summary>
+<div markdown="1">
+
+![여행 동행 모집 수정](assets/images/여행동행모집수정.png)
+
+</div>
+</details>
+
+###
+
+<details>
+<summary>여행 동행 모집 삭제</summary>
+<div markdown="1">
+
+![여행 동행 모집 삭제](assets/images/여행동행모집삭제.png)
+
+</div>
+</details>
+
+###
+
+<details>
+<summary>여행 동행 모집 상태 설정</summary>
+<div markdown="1">
+
+![여행 동행 모집 상태 설정](assets/images/여행동행모집상태설정.png)
+
+</div>
+</details>
+
+###
+
+<details>
+<summary>여행 동행 모집 전체 조회 & 검색</summary>
+<div markdown="1">
+
+![여행 동행 모집 전체 조회1](assets/images/여행동행모집전체조회1.png)
+![여행 동행 모집 전체 조회2](assets/images/여행동행모집전체조회2.png)
+
+</div>
+</details>
+
+###
+
+<details>
+<summary>여행 동행 모집 상세 조회</summary>
+<div markdown="1">
+
+![여행 동행 모집 상세 조회](assets/images/여행동행모집상세조회.png)
+
+</div>
+</details>
+
+
+###
+
+<details>
+<summary>여행 동행 모집 참가 신청</summary>
+<div markdown="1">
+
+![여행 동행 모집 참가 신청](assets/images/여행동행모집참가신청.png)
+
+</div>
+</details>
+
+###
+
+<details>
+<summary>여행 동행 모집 참가 신청 관리</summary>
+<div markdown="1">
+
+![여행 동행 모집 참가 신청 관리1](assets/images/여행동행모집참가신청관리1.png)
+![여행 동행 모집 참가 신청 관리2](assets/images/여행동행모집참가신청관리2.png)
+
+</div>
+</details>
+
+###
+
+<details>
+<summary>여행 동행 모집 강퇴</summary>
+<div markdown="1">
+
+![여행 동행 모집 강퇴](assets/images/여행동행모집강퇴.png)
+
+</div>
+</details>
+
+###
+
+<details>
+<summary>여행 동행 모집 나가기</summary>
+<div markdown="1">
+
+![여행 동행 모집 나가기](assets/images/여행동행모집나가기.png)
+
+</div>
+</details>
+
+</div>
+</details>
+
+
+## 신고
+
+<details>
+<summary>신고</summary>
+<div markdown="1">
+
+
+<details>
+<summary>여행 후기 신고</summary>
+<div markdown="1">
+
+![여행 후기 신고](assets/images/여행후기신고.png)
+
+</div>
+</details>
+
+###
+
+<details>
+<summary>여행 후기 신고 승인</summary>
+<div markdown="1">
+
+![여행 후기 신고 승인](assets/images/여행후기신고승인.png)
+
+</div>
+</details>
+
+
+###
+
+<details>
+<summary>여행 후기 신고 반려</summary>
+<div markdown="1">
+
+![여행 후기 신고 반려](assets/images/여행후기신고반려.png)
+
+</div>
+</details>
+
+###
+
+<details>
+<summary>여행 후기 댓글 신고 </summary>
+<div markdown="1">
+
+![여행 후기 댓글 신고](assets/images/여행후기댓글신고.png)
+
+</div>
+</details>
+
+
+###
+
+<details>
+<summary>여행 후기 댓글 신고 승인 </summary>
+<div markdown="1">
+
+![여행 후기 댓글 신고 승인](assets/images/여행후기댓글신고승인.png)
+
+</div>
+</details>
+
+###
+
+<details>
+<summary>여행 후기 댓글 신고 </summary>
+<div markdown="1">
+
+![여행 후기 댓글 신고 반려](assets/images/여행후기댓글신고반려.png)
+
+</div>
+</details>
+
+###
+
+<details>
+<summary>여행 코스 신고 </summary>
+<div markdown="1">
+
+![여행 코스 신고](assets/images/여행코스신고.png)
+
+</div>
+</details>
+
+###
+
+<details>
+<summary>여행 코스 신고 승인 </summary>
+<div markdown="1">
+
+![여행 코스 신고 승인](assets/images/코스신고승인.png)
+
+</div>
+</details>
+
+###
+
+<details>
+<summary>여행 코스 신고 반려 </summary>
+<div markdown="1">
+
+![여행 코스 신고 반려](assets/images/코스신고반려.png)
+
+</div>
+</details>
+
+###
+
+<details>
+<summary>여행 동행 신고 </summary>
+<div markdown="1">
+
+![여행 동행 신고](assets/images/여행동행신고.png)
+
+</div>
+</details>
+
+###
+
+<details>
+<summary>여행 동행 신고 승인 </summary>
+<div markdown="1">
+
+![여행 동행 신고 승인](assets/images/동행신고승인.png)
+
+</div>
+</details>
+
+###
+
+<details>
+<summary>여행 동행 신고 반려 </summary>
+<div markdown="1">
+
+![여행 동행 신고 반려](assets/images/동행신고반려.png)
+
+</div>
+</details>
+
+###
+
+<details>
+<summary>신고 내역 조회 </summary>
+<div markdown="1">
+
+![신고 내역 조회](assets/images/신고내역조회.png)
+
+</div>
+</details>
+
+###
+
+<details>
+<summary>신고 내역 상세 조회-후기</summary>
+<div markdown="1">
+
+![신고 내역 상세 조회-후기](assets/images/신고내역상세조회_후기.png)
+
+</div>
+</details>
+
+
+###
+
+<details>
+<summary>신고 내역 상세 조회-댓글</summary>
+<div markdown="1">
+
+![신고 내역 상세 조회-댓글](assets/images/신고내역상세조회_댓글.png)
+
+</div>
+</details>
+
+###
+
+<details>
+<summary>신고 내역 상세 조회-코스</summary>
+<div markdown="1">
+
+![신고 내역 상세 조회-코스](assets/images/신고내역상세조회_코스.png)
+
+</div>
+</details>
+
+###
+
+<details>
+<summary>신고 내역 상세 조회-동행</summary>
+<div markdown="1">
+
+![신고 내역 상세 조회-동행](assets/images/신고내역상세조회_동행.png)
+
+</div>
+</details>
+
+###
+
+<details>
+<summary>정지 이력 기록</summary>
+<div markdown="1">
+
+![정지 이력 기록](assets/images/정지이력기록.png)
+
+</div>
+</details>
+
+
+
+</div>
+</details>
+>>>>>>> main
