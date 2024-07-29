@@ -1234,7 +1234,134 @@ crontab -e
 </div>
 </details>
 
+## 알림
 
+
+<details>
+<summary>알림</summary>
+<div markdown="1">
+
+<details>
+<summary>알림 템플릿 등록</summary>
+<div markdown="1">
+
+![알림 템플릿 등록](assets/images/alarm_insert.png)
+
+</div>
+</details>
+
+###
+
+<details>
+<summary>알림 템플릿 수정</summary>
+<div markdown="1">
+
+![알림 템플릿 수정](assets/images/alarm_update.png)
+
+</div>
+</details>
+
+###
+
+<details>
+<summary>알림 템플릿 삭제</summary>
+<div markdown="1">
+
+![알림 템플릿 삭제](assets/images/alarm_delete.png)
+
+</div>
+</details>
+
+###
+
+<details>
+<summary>알림 템플릿 조회</summary>
+<div markdown="1">
+
+![알림 템플릿 조회](assets/images/alarm_select.png)
+
+</div>
+</details>
+
+###
+
+<details>
+<summary>알림 템플릿 상세조회</summary>
+<div markdown="1">
+
+![알림 템플릿 상세조회](assets/images/alarm_detail_select.png)
+
+</div>
+</details>
+
+###
+
+<details>
+<summary>댓글 작성 알림 발송</summary>
+<div markdown="1">
+
+![댓글 작성 알림 발송](assets/images/리뷰%20댓글%20작성%20시%20리뷰%20작성자에게%20알림%20발송.png)
+
+</div>
+</details> 
+
+###
+
+<details>
+<summary>좋아요 알림 발송</summary>
+<div markdown="1">
+
+![좋아요 알림 발송](assets/images/리뷰%20좋아요%20시%20리뷰%20작성자에게%20알림%20발송.png)
+
+</div>
+</details> 
+
+###
+
+<details>
+<summary>별점 알림 발송</summary>
+<div markdown="1">
+
+![별점 알림 발송](assets/images/리뷰%20별점%20시%20리뷰%20작성자에게%20알림%20발송.png)
+
+</div>
+</details> 
+
+###
+
+<details>
+<summary>동행참가 알림 발송</summary>
+<div markdown="1">
+
+![동행참가 알림 발송](assets/images/동행%20참가%20요청%20시%20동행%20모집자에게%20알림%20발송.png)
+
+</div>
+</details> 
+
+###
+
+<details>
+<summary>신고 승인 시 알림발송</summary>
+<div markdown="1">
+
+![신고 승인 시 알림발송](assets/images/신고%20상태%20accept%20시%20신고자,%20신고당한%20자%20모두에게%20알림발송.png)
+
+</div>
+</details> 
+
+###
+
+<details>
+<summary>동행 참가여부에 따른 알림발송</summary>
+<div markdown="1">
+
+![동행 참가여부에 따른 알림발송](assets/images/여행%20동행자%20참가%20여부에%20따른%20동행%20신청자에게%20알림%20발송.png)
+
+</div>
+</details> 
+
+</div>
+</details>
 
 ## 11. 트러블슈팅
 
